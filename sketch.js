@@ -63,7 +63,13 @@ function draw()
     if(thunderCreatedFrame+10===frameCount && thunder)
     {
         thunder.destroy();
-    }
+        background(	16, 12, 8)
+}
+else
+{
+    background("black")
+}
+}
     umbrella.display();
     for(var i = 0; i<maxDrops ; i++)
     {
