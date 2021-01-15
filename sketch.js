@@ -37,7 +37,7 @@ function draw()
 {
     Engine.update(engine);
     background(0);
-    
+    lightning()
 
     rand = Math.round(random(1.4))
     if(frameCount%80===0)
@@ -73,13 +73,15 @@ function draw()
 
     drawSprites();
 }   
-if(thunderCreatedFrame)
+function lightning()
 {
-    background(16,12,8)
+if(thunderCreatedFrame+10===frameCount && thunder)
+{
+    background(	16, 12, 8)
 }
 else
 {
     background("black")
 }
-
+}
 
